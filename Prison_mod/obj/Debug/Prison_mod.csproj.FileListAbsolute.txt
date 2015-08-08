@@ -1,0 +1,5 @@
+C:\Users\pc\Documents\GitHub\prison_mod\Prison_mod\bin\Debug\Prison_mod.dll
+C:\Users\pc\Documents\GitHub\prison_mod\Prison_mod\bin\Debug\Prison_mod.pdb
+C:\Users\pc\Documents\GitHub\prison_mod\Prison_mod\obj\Debug\Prison_mod.csprojResolveAssemblyReference.cache
+C:\Users\pc\Documents\GitHub\prison_mod\Prison_mod\obj\Debug\Prison_mod.dll
+C:\Users\pc\Documents\GitHub\prison_mod\Prison_mod\obj\Debug\Prison_mod.pdb
