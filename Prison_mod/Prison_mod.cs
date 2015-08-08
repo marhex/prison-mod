@@ -138,23 +138,7 @@ public class Prison_mod : Script
             intial1();
         }
 
-        /*   
-            if(shoted)
-            {
-                if (Function.Call<bool>(Hash.IS_PED_SHOOTING, tttt))
-                {
-                    Script.Wait(1500);
-                    Game.Player.Character.Position = new Vector3(1651.726f , 2568.254f , 47.51672f);
-                    shoted = false;
-                }
-                if (tttt.Position.DistanceTo(Game.Player.Character.Position)<10f)
-                {
-                    tttt.Task.ShootAt(Game.Player.Character);
-                    tttt.Task.Wait(100);
-                }
-
-            }
-            */
+       
 
         #region escape
         if (escape)
@@ -358,14 +342,6 @@ public class Prison_mod : Script
                     minit = 60 - mm;
                     hhh = false;
                 }
-
-
-            
-
-              
-                Function.Call(Hash.TERMINATE_ALL_SCRIPTS_WITH_THIS_NAME, "respawn_controller");
-                Function.Call(Hash.TERMINATE_ALL_SCRIPTS_WITH_THIS_NAME, "re_prison");
-
                
                 test = World.GetNearbyPeds(Game.Player.Character,150f);
                 Function.Call(Hash.TERMINATE_ALL_SCRIPTS_WITH_THIS_NAME, "respawn_controller");
@@ -442,17 +418,7 @@ public class Prison_mod : Script
                                 garde.Add(test2[j]);
 
                         }
-
-
-
-
-
-                    }
-
-
-
-
-                                    
+                    }                
                 }
                 //===================================================================================================
                 
@@ -468,54 +434,6 @@ public class Prison_mod : Script
 
                 _headsup.Draw();
                 _headsupRectangle.Draw();
-
-
-                
-            /*
-
-            if(Game.Player.IsTargettingAnything && false)
-            {
-              //  Ped target = Game.Player.GetTargetedEntity();
-
-                Ped[] gard = World.GetNearbyPeds(Game.Player.Character, 120f);
-                for (int i = 0; i < gard.Length;i++ )
-                {
-                    garde[i].Weapons.RemoveAll();
-                    garde[i].Weapons.Give(WeaponHash.StunGun, 100, true, true);
-                    garde[i].Task.ClearAllImmediately();
-                    garde[i].Task.RunTo(Game.Player.Character.Position);
-                    if (gard.Length > 0 && i == 0)
-                    {
-                        gard[0].Task.ShootAt(Game.Player.Character);
-                        gard[0].Task.Wait(100);
-                    }
-                }
-
-
-            
-
-                    for (int i = 0; i < garde.Count; i++)
-                    {
-                        if (garde[i].Position.DistanceTo(Game.Player.Character.Position) < 150f)
-                        {
-                            garde[i].Weapons.RemoveAll();
-                            garde[i].Weapons.Give(WeaponHash.StunGun, 100, true, true);
-                            garde[i].Task.ClearAllImmediately();
-                            garde[i].Task.RunTo(Game.Player.Character.Position);
-
-                            tttt = garde[i];
-                            shoted = true;
-
-
-                            break;
-                        }
-
-                    }
-
-
-            }
-
-            */
 
                 if (Game.Player.Character.Position.DistanceTo(new Vector3(1691.709f, 2565.036f, 45.56487f)) < 2f)
                     {
