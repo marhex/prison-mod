@@ -452,7 +452,7 @@ public class Prison_mod : Script
                 bail.Remove();
                 Game.Player.Character.Position = new Vector3(1849.555f, 2586.085f, 45.67202f);
                 Game.Player.Character.Heading = 258.4564f;
-               // Game.Player.Money -= 5000000;
+               
                 Function.Call(Hash.SET_MAX_WANTED_LEVEL, 5);
 
                 Function.Call(Hash.PAUSE_CLOCK, false);
